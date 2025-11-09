@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "TSI Directory - Transformujte Dopravné Dáta s AI",
+    "description": "Konvertujte JSON dopravné dáta do EDIFACT (SKDUPD/TSDUPD) a GTFS formátov okamžite. Profesionálna platforma pre konverziu dopravných dát.",
+    "keywords": "EDIFACT konvertor, GTFS generátor, dopravné dáta, SKDUPD, TSDUPD, verejná doprava, konverzia dát"
+  },
+  "navigation": {
+    "home": "Domov",
+    "about": "O projekte",
+    "contact": "Kontakt",
+    "tryAgent": "Vyskúšať TSI Agent"
+  },
+  "hero": {
+    "title": "Transformujte Dopravné Dáta s AI",
+    "subtitle": "Konvertujte JSON dopravné dáta do EDIFACT a GTFS formátov okamžite",
+    "description": "Profesionálna konverzná platforma pre dáta verejnej dopravy. Generujte SKDUPD, TSDUPD a GTFS formáty jedným kliknutím.",
+    "cta": "Začať Konverziu",
+    "secondaryCta": "Zobraziť Dokumentáciu"
+  },
+  "features": {
+    "title": "Kompletná Konverzia Dopravných Dát",
+    "subtitle": "Všetko čo potrebujete na transformáciu dopravných dát",
+    "edifact": {
+      "title": "EDIFACT Generovanie",
+      "description": "Generujte validné SKDUPD a TSDUPD formáty kompatibilné s európskymi dopravnými štandardmi"
+    },
+    "gtfs": {
+      "title": "GTFS Export", 
+      "description": "Vytvárajte kompletné GTFS feedy pre Google Maps a iné dopravné aplikácie"
+    },
+    "validation": {
+      "title": "Inteligentná Validácia",
+      "description": "AI validácia zabezpečuje, že vaše dáta spĺňajú všetky požiadavky formátov"
+    },
+    "realtime": {
+      "title": "Real-time Spracovanie",
+      "description": "Rýchla konverzia s live aktualizáciami pokroku a okamžitým stiahnutím"
+    }
+  },
+  "useCases": {
+    "title": "Dôverujú Nám Dopravní Profesionáli",
+    "subtitle": "Od agentúr po konzultantov",
+    "agencies": {
+      "title": "Dopravné Agentúry",
+      "description": "Konvertujte údaje o trasách pre regulačnú compliance a integráciu systémov"
+    },
+    "consultants": {
+      "title": "Dopravní Konzultanti",
+      "description": "Generujte profesionálne reporty a dátové exporty pre klientov"
+    },
+    "developers": {
+      "title": "Vývojári Softvéru", 
+      "description": "API integrácia pre automatizované workflows dopravných dát"
+    }
+  },
+  "cta": {
+    "title": "Pripravení Transformovať Vaše Dopravné Dáta?",
+    "description": "Pridajte sa k profesionálom používajúcim TSI Agent na konverziu dopravných dát",
+    "button": "Spustiť Bezplatnú Skúšku"
+  },
+  "footer": {
+    "description": "Profesionálna platforma pre konverziu dopravných dát",
+    "links": {
+      "product": "Produkt",
+      "company": "Spoločnosť",
+      "support": "Podpora"
+    },
+    "copyright": "© 2024 Avantle. Všetky práva vyhradené."
+  }
+}
