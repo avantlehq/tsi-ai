@@ -1,0 +1,76 @@
+{
+  "input_data": {
+    "publisher": {
+      "id": "test_publisher",
+      "name": "Test Publisher",
+      "url": "https://test.com",
+      "email": "test@test.com"
+    },
+    "agencies": [
+      {
+        "id": "agency_1",
+        "name": "Test Transport",
+        "timezone": "Europe/Bratislava",
+        "url": "https://transport.test"
+      }
+    ],
+    "stations": [
+      {
+        "id": "station_1",
+        "name": "Central Station",
+        "lat": 48.1486,
+        "lon": 17.1077
+      },
+      {
+        "id": "station_2", 
+        "name": "Airport Station",
+        "lat": 48.1700,
+        "lon": 17.2100
+      }
+    ],
+    "services": [
+      {
+        "id": "service_1",
+        "agency_id": "agency_1",
+        "route_short_name": "61",
+        "route_long_name": "Central - Airport",
+        "route_type": 3,
+        "variants": [
+          {
+            "id": "variant_1",
+            "calendar": {
+              "service_id": "variant_1",
+              "monday": true,
+              "tuesday": true,
+              "wednesday": true,
+              "thursday": true,
+              "friday": true,
+              "saturday": false,
+              "sunday": false,
+              "start_date": "20240101",
+              "end_date": "20241231"
+            }
+          }
+        ],
+        "calls": [
+          {
+            "station_id": "station_1",
+            "arrival_time": "08:00:00",
+            "departure_time": "08:00:00",
+            "stop_sequence": 1
+          },
+          {
+            "station_id": "station_2",
+            "arrival_time": "08:30:00",
+            "departure_time": "08:30:00",
+            "stop_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  "output_format": "edifact-skdupd",
+  "options": {
+    "version": "CURRENT"
+  }
+}

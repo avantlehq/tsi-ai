@@ -1,0 +1,27 @@
+{
+  "input_data": {
+    "publisher": {
+      "id": "test_publisher",
+      "name": "Test Publisher",
+      "url": "https://test.com"
+    },
+    "stations": [
+      {
+        "id": "station_1",
+        "name": "Central Station",
+        "lat": 48.1486,
+        "lon": 17.1077
+      },
+      {
+        "id": "station_2", 
+        "name": "Airport Station",
+        "lat": 48.1700,
+        "lon": 17.2100
+      }
+    ]
+  },
+  "output_format": "edifact-tsdupd",
+  "options": {
+    "version": "CURRENT"
+  }
+}
