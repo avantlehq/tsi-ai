@@ -1,10 +1,7 @@
-import { useTranslations } from 'next-intl'
 import { ArrowRight, Zap, Shield, Globe } from 'lucide-react'
-import { Link } from '../../../i18n/routing'
+import Link from 'next/link'
 
 export default function HomePage() {
-  const t = useTranslations()
-  
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       {/* Navigation */}
@@ -17,14 +14,14 @@ export default function HomePage() {
             <span className="font-bold text-xl">Directory</span>
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-600 hover:text-gray-900">{t('navigation.home')}</Link>
-            <Link href="/about" className="text-gray-600 hover:text-gray-900">{t('navigation.about')}</Link>
-            <Link href="/contact" className="text-gray-600 hover:text-gray-900">{t('navigation.contact')}</Link>
+            <Link href="/" className="text-gray-600 hover:text-gray-900">Home</Link>
+            <Link href="/about" className="text-gray-600 hover:text-gray-900">About</Link>
+            <Link href="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
             <a 
-              href="https://tsi.avantle.ai/signup"
+              href="https://tsi.avantle.ai/agent"
               className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
             >
-              {t('navigation.tryAgent')}
+              Try TSI Agent
             </a>
           </div>
         </div>
@@ -34,21 +31,21 @@ export default function HomePage() {
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            {t('hero.title')}
+            Transform Transport Data with AI
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            {t('hero.description')}
+            Professional-grade conversion platform for public transport data. Generate SKDUPD, TSDUPD, and GTFS formats with one click.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://tsi.avantle.ai/signup"
+              href="https://tsi.avantle.ai/agent"
               className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
             >
-              {t('hero.cta')}
+              Start Converting Now
               <ArrowRight className="w-5 h-5" />
             </a>
             <button className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
-              {t('hero.secondaryCta')}
+              View Documentation
             </button>
           </div>
         </div>
@@ -59,10 +56,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t('features.title')}
+              Complete Transport Data Conversion
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              {t('features.subtitle')}
+              Everything you need to transform transport data
             </p>
           </div>
           
@@ -72,10 +69,10 @@ export default function HomePage() {
                 <Zap className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {t('features.edifact.title')}
+                EDIFACT Generation
               </h3>
               <p className="text-gray-600">
-                {t('features.edifact.description')}
+                Generate valid SKDUPD and TSDUPD formats compliant with European transport standards
               </p>
             </div>
             
@@ -84,10 +81,10 @@ export default function HomePage() {
                 <Globe className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {t('features.gtfs.title')}
+                GTFS Export
               </h3>
               <p className="text-gray-600">
-                {t('features.gtfs.description')}
+                Create complete GTFS feeds for Google Maps and other transport applications
               </p>
             </div>
             
@@ -96,10 +93,10 @@ export default function HomePage() {
                 <Shield className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {t('features.validation.title')}
+                Smart Validation
               </h3>
               <p className="text-gray-600">
-                {t('features.validation.description')}
+                AI-powered validation ensures your data meets all format requirements
               </p>
             </div>
             
@@ -108,10 +105,10 @@ export default function HomePage() {
                 <ArrowRight className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {t('features.realtime.title')}
+                Real-time Processing
               </h3>
               <p className="text-gray-600">
-                {t('features.realtime.description')}
+                Fast conversion with live progress updates and instant download
               </p>
             </div>
           </div>
@@ -123,38 +120,38 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t('useCases.title')}
+              Trusted by Transport Professionals
             </h2>
             <p className="text-xl text-gray-600">
-              {t('useCases.subtitle')}
+              From agencies to consultants
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm border">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                {t('useCases.agencies.title')}
+                Transport Agencies
               </h3>
               <p className="text-gray-600">
-                {t('useCases.agencies.description')}
+                Convert route data for regulatory compliance and system integration
               </p>
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-sm border">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                {t('useCases.consultants.title')}
+                Transport Consultants
               </h3>
               <p className="text-gray-600">
-                {t('useCases.consultants.description')}
+                Generate professional reports and data exports for clients
               </p>
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-sm border">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                {t('useCases.developers.title')}
+                Software Developers
               </h3>
               <p className="text-gray-600">
-                {t('useCases.developers.description')}
+                API integration for automated transport data workflows
               </p>
             </div>
           </div>
@@ -165,16 +162,16 @@ export default function HomePage() {
       <section className="px-6 py-20 bg-blue-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            {t('cta.title')}
+            Ready to Transform Your Transport Data?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            {t('cta.description')}
+            Join professionals using TSI Agent for transport data conversion
           </p>
           <a
-            href="https://tsi.avantle.ai/signup"
+            href="https://tsi.avantle.ai/agent"
             className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors inline-flex items-center gap-2"
           >
-            {t('cta.button')}
+            Start Free Trial
             <ArrowRight className="w-5 h-5" />
           </a>
         </div>
@@ -192,11 +189,11 @@ export default function HomePage() {
                 <span className="font-bold">Directory</span>
               </div>
               <p className="text-gray-400">
-                {t('footer.description')}
+                Professional transport data conversion platform
               </p>
             </div>
             <div className="text-gray-400">
-              {t('footer.copyright')}
+              © 2024 Avantle. All rights reserved.
             </div>
           </div>
         </div>

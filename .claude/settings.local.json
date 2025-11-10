@@ -5,7 +5,12 @@
       "Bash(mkdir:*)",
       "Bash(python:*)",
       "Bash(curl:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(npm run build:*)",
+      "Bash(gh repo view:*)",
+      "Bash(vercel:*)",
+      "Bash(rm:*)"
     ],
     "defaultMode": "acceptEdits",
     "additionalDirectories": [

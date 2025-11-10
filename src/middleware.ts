@@ -1,6 +1,4 @@
-import createIntlMiddleware from 'next-intl/middleware';
 import { NextRequest, NextResponse } from 'next/server';
-import { routing } from '../i18n/routing';
 
 // JWT verification function (mock implementation)
 function verifyJWT(token: string): { valid: boolean; payload?: any } {
@@ -44,8 +42,6 @@ function checkRateLimit(tenantId: string, maxRequests = 100, windowMs = 15 * 60 
   return true;
 }
 
-const intlMiddleware = createIntlMiddleware(routing);
-
 export default function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   
@@ -54,8 +50,8 @@ export default function middleware(request: NextRequest) {
     return handleApiRequest(request);
   }
   
-  // Handle internationalization for other routes
-  return intlMiddleware(request);
+  // Continue with normal processing
+  return NextResponse.next();
 }
 
 function handleApiRequest(request: NextRequest) {
@@ -110,8 +106,6 @@ function handleApiRequest(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Skip all internal paths (_next)
-    '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
     // Always run for API routes
     '/api/(.*)',
   ],
