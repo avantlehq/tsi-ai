@@ -10,7 +10,8 @@
       "Bash(npm run build:*)",
       "Bash(gh repo view:*)",
       "Bash(vercel:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(pnpm dev:*)"
     ],
     "defaultMode": "acceptEdits",
     "additionalDirectories": [
