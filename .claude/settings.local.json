@@ -11,11 +11,28 @@
       "Bash(gh repo view:*)",
       "Bash(vercel:*)",
       "Bash(rm:*)",
-      "Bash(pnpm dev:*)"
+      "Bash(pnpm dev:*)",
+      "WebFetch(domain:tsi.avantle.ai)",
+      "Bash(git commit:*)",
+      "Bash(nslookup:*)",
+      "Bash(ping:*)",
+      "Bash(cp:*)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm run:*)",
+      "Bash(timeout:*)",
+      "Bash(mv:*)",
+      "Bash(git init:*)",
+      "Bash(gh repo create:*)",
+      "Bash(git remote add:*)",
+      "Bash(npm install)",
+      "WebFetch(domain:tsi.directory)",
+      "Bash(pnpm lint:*)",
+      "Bash(taskkill:*)"
     ],
     "defaultMode": "acceptEdits",
     "additionalDirectories": [
-      "C:\\Users\\rasti\\Projects"
+      "C:\\Users\\rasti\\Projects",
+      "C:\\c\\Users\\rasti\\Projects\\avantlehq"
     ]
   }
 }
